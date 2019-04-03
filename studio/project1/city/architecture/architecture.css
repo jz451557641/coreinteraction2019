@@ -1,0 +1,219 @@
+body {
+background-color: black;
+}
+.back{
+	max-width: 10px;
+	max-height: 10px;
+transform: scale(0.02, 0.02);
+-ms-transform: scale(0.02, 0.02);
+-webkit-transform: scale(0.02, 0.02);
+ margin-left:2%;
+}
+.back:hover{
+	 animation: back linear 2s infinite;
+	 animation-iteration-count: infinite;
+	}
+
+	@keyframes back {
+	 0% {opacity: 1;}
+	 33% {opacity: 0;}
+	 66%{opacity: 1;}
+	}
+
+.flash{
+	animation: flash linear 3s infinite;
+	animation-iteration-count: 1;
+}
+
+@keyframes flash {
+	0% {opacity: 1;}
+	1% {opacity: 0;}
+	2% {opacity: 1;}
+	3% {opacity: 0;}
+	4%{opacity: 1;}
+  6%{opacity: 0;}
+	8%{opacity: 1;}
+	10% {opacity: 1;}
+	12% {opacity: 0;}
+	14%{opacity: 1;}
+	16%{opacity: 0;}
+	18%{opacity: 1;}
+	100% {opacity: 1;}
+}
+.glitch{
+  font-family:'Anurati', anurati;
+  color:white;
+  font-size:200px;
+  position:relative;
+	margin-top: 15%;
+  margin-left: 8%;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(17px, 9999px, 180px, 0);
+  }
+  5% {
+    clip: rect(51px, 9999px, 118px, 0);
+  }
+  10% {
+    clip: rect(68px, 9999px, 184px, 0);
+  }
+  15% {
+    clip: rect(17px, 9999px, 162px, 0);
+  }
+  20% {
+    clip: rect(65px, 9999px, 183px, 0);
+  }
+  25% {
+    clip: rect(71px, 9999px, 126px, 0);
+  }
+  30% {
+    clip: rect(72px, 9999px, 158px, 0);
+  }
+  35% {
+    clip: rect(21px, 9999px, 134px, 0);
+  }
+  40% {
+    clip: rect(76px, 9999px, 130px, 0);
+  }
+  45% {
+    clip: rect(15px, 9999px, 119px, 0);
+  }
+  50% {
+    clip: rect(28px, 9999px, 166px, 0);
+  }
+  55% {
+    clip: rect(22px, 9999px, 168px, 0);
+  }
+  60% {
+    clip: rect(96px, 9999px, 158px, 0);
+  }
+  65% {
+    clip: rect(89px, 9999px, 185px, 0);
+  }
+  70% {
+    clip: rect(75px, 9999px, 118px, 0);
+  }
+  75% {
+    clip: rect(59px, 9999px, 148px, 0);
+  }
+  80% {
+    clip: rect(17px, 9999px, 129px, 0);
+  }
+  85% {
+    clip: rect(31px, 9999px, 112px, 0);
+  }
+  90% {
+    clip: rect(58px, 9999px, 113px, 0);
+  }
+  95% {
+    clip: rect(30px, 9999px, 198px, 0);
+  }
+  100% {
+    clip: rect(13px, 9999px, 184px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(25px, 9999px, 146px, 0);
+  }
+  5% {
+    clip: rect(44px, 9999px, 189px, 0);
+  }
+  10% {
+    clip: rect(61px, 9999px, 169px, 0);
+  }
+  15% {
+    clip: rect(33px, 9999px, 157px, 0);
+  }
+  20% {
+    clip: rect(16px, 9999px, 157px, 0);
+  }
+  25% {
+    clip: rect(53px, 9999px, 174px, 0);
+  }
+  30% {
+    clip: rect(29px, 9999px, 128px, 0);
+  }
+  35% {
+    clip: rect(31px, 9999px, 184px, 0);
+  }
+  40% {
+    clip: rect(14px, 9999px, 113px, 0);
+  }
+  45% {
+    clip: rect(14px, 9999px, 189px, 0);
+  }
+  50% {
+    clip: rect(81px, 9999px, 129px, 0);
+  }
+  55% {
+    clip: rect(17px, 9999px, 191px, 0);
+  }
+  60% {
+    clip: rect(83px, 9999px, 191px, 0);
+  }
+  65% {
+    clip: rect(83px, 9999px, 117px, 0);
+  }
+  70% {
+    clip: rect(13px, 9999px, 127px, 0);
+  }
+  75% {
+    clip: rect(32px, 9999px, 61px, 0);
+  }
+  80% {
+    clip: rect(15px, 9999px, 198px, 0);
+  }
+  85% {
+    clip: rect(87px, 9999px, 115px, 0);
+  }
+  90% {
+    clip: rect(62px, 9999px, 137px, 0);
+  }
+  95% {
+    clip: rect(63px, 9999px, 170px, 0);
+  }
+  100% {
+    clip: rect(10px, 9999px, 174px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+p{
+  width: 75%;
+  height: auto;
+  padding: 25px;
+  text-align: justify;
+  position: absolute;
+  margin: 10%;
+  font-family: 'Exo', sans-serif;
+  font-size: 15px;
+  color: white;
+	border: 5px solid transparent;
+}

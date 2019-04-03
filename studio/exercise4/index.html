@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<style>
+  body{
+    margin:10;
+    padding: 0;
+
+  }
+
+  p{
+    margin:0;
+
+  }
+
+
+#clock{
+  width: 800px;
+  height: 200px;
+  background-color: #ccffdd;
+  position: absolute;
+  transition: 1s;
+  left: 200;
+  top: 300px;
+}
+
+#clock2{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50px;
+  transition: 1s;
+  left: 550;
+  top: 380;
+  z-index: 2;
+}
+
+#clock3{
+  width: 500px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  transition: 1s;
+  left: 325;
+  top: 380px;
+  z-index: 1;
+  opacity: .3;
+}
+
+
+
+
+  </style>
+
+
+<body>
+  <p id="name"></p>
+  <p id="time"></p>
+  <p id="ticker"></p>
+  <p id="ticker2"></p>
+  <div id="clock"></div>
+  <div id="clock2"></div>
+<div id="clock3"></div>
+</body>
+</html>
