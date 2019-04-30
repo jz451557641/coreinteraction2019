@@ -1,0 +1,101 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+
+#shape1{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border-radius: 60px;
+  left: 0;
+  top: 0;
+  border: 3px solid white;
+}
+
+
+
+#outcircle{
+  width: 430px;
+  height: 430px;
+  border-radius: 430px;
+  left: 30%;
+  top:40%;
+  position: fixed;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+#planet{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: fixed;
+  background: linear-gradient(-45deg, #6600ff, #cc99ff, #ffcc66, #ff9900);
+  background-size: 400% 400%;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#incircle2{
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  position: fixed;
+  border: 3px solid white;
+}
+
+#incircle3{
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  position: fixed;
+  border: 3px solid white;
+}
+
+#ball{
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  position: fixed;
+  border: 3px solid white;
+}
