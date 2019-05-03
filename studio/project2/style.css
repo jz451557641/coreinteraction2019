@@ -15,7 +15,7 @@ animation: Gradient 15s ease infinite;
   border-radius: 80px;
   left: 0;
   top: 0;
-  background: #a3a3c2;
+  background: #cc0000;
 -o-animation: blinking-outer-glow 2s infinite;
 -webkit-animation: blinking-outer-glow 2s infinite;
 -moz-animation: blinking-outer-glow 2s infinite;
@@ -24,9 +24,9 @@ animation: blinking-outer-glow 2s infinite;
 
 @-ms-keyframes blinking-outer-glow {
   0%, 100% {
-    -moz-box-shadow: 0 0 10px #bbb;
-    -webkit-box-shadow: 0 0 10px #bbb;
-    box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #ff0000;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
   50% {
     -moz-box-shadow: 0 0 100px #ff0000;
@@ -36,9 +36,9 @@ animation: blinking-outer-glow 2s infinite;
 }
 @-o-keyframes blinking-outer-glow {
   0%, 100% {
-    -moz-box-shadow: 0 0 10px #bbb;
-    -webkit-box-shadow: 0 0 10px #bbb;
-    box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #ff0000;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
   50% {
     -moz-box-shadow: 0 0 100px #ff0000;
@@ -48,9 +48,9 @@ animation: blinking-outer-glow 2s infinite;
 }
 @-webkit-keyframes blinking-outer-glow {
   0%, 100% {
-    -moz-box-shadow: 0 0 10px #bbb;
-    -webkit-box-shadow: 0 0 10px #bbb;
-    box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #ff0000;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
   50% {
     -moz-box-shadow: 0 0 100px #ff0000;
@@ -60,9 +60,9 @@ animation: blinking-outer-glow 2s infinite;
 }
 @-moz-keyframes blinking-outer-glow {
   0%, 100% {
-    -moz-box-shadow: 0 0 10px #bbb;
-    -webkit-box-shadow: 0 0 10px #bbb;
-    box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #ff0000;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
   50% {
     -moz-box-shadow: 0 0 100px #ff0000;
@@ -72,9 +72,9 @@ animation: blinking-outer-glow 2s infinite;
 }
 @keyframes blinking-outer-glow {
   0%, 100% {
-    -moz-box-shadow: 0 0 10px #bbb;
-    -webkit-box-shadow: 0 0 10px #bbb;
-    box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #ff0000;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+    box-shadow: 0 0 10px #ff0000;
   }
   50% {
     -moz-box-shadow: 0 0 100px #ff0000;
