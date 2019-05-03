@@ -1,348 +1,148 @@
-@import url("https://fonts.googleapis.com/css?family=Arapey");
-
-
 body {
+  padding: 0;
   margin: 0;
-  font-family: 'Arapey';
-  line-height: 30px;
-  font-size: 20px;
-}
-body h1 {
-  font-size: 2em;
-  text-align: center;
-  margin-top: 20%;
+  font-family: "acta-display";
 }
 
-section {
-  padding: 3em;
-  height: 110vh;
-  position: relative;
+a{
+  text-decoration: none;
+}
+a:visited {
+color: black;
+}
+
+h1, h2, h3 {
+  font-family: "acta-display";
+  font-weight: 300;
+}
+
+.flex, header, .section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  min-height: 400px;
+  height: 100vh;
+  font-weight: bold;
+}
+header article {
+  float: left;
+  text-align: left;
+}
+header h1 {
+  font-size: 5rem;
+}
+
+
+
+.section {
+  width: 100%;
+  min-height: 400px;
+  height: 100vh;
+  color: black;
   box-sizing: border-box;
+  position: relative;
 }
-
-
-
-
-.p1 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
+.section:before {
   position: absolute;
+  width: 100%;
 }
-.p1 topic span {
+
+.section__left {
+  width: 50%;
+  left:-15%;
+  float: left;
+}
+.section__right {
+  width: 50%;
+  left: 20%;
+  float: left;
+}
+.section article {
+  text-align: left;
+}
+.section article h3 {
+  font-size: 2.2rem;
+}
+.section article p {
+  font-size: 1.2rem;
+}
+
+.section h3 span {
   width: 100%;
   background: red;
   display: block;
   height: 5px;
   margin-top: 20px;
 }
-.p1 p{
-width: 600px;
-margin-top: 15%;
-margin-left: 40px;
-}
-.p1 img {
-  position: absolute;
-  width: 40%;
-  right: 0;
-  top: 20%;
-}
 
-
-
-
-
-.p2 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p2 topic span {
+.foot{
   width: 100%;
-  background: red;
+  height: 10vh;
+}
+.foot span{
+  width: 100%;
+  background: black;
   display: block;
   height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p2 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p2 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
 }
 
 
-
-
-
-.p3 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
+* {
+  position: relative;
+  backface-visibility: hidden;
+  font-family: "acta-display";
 }
-.p3 topic span {
-  width: 100%;
-  background: red;
+
+.botton {
+  width: 120px;
+  height: 30px;
   display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
+  top: 45%;
+  border: solid 1.5px #3B3B3B;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
 }
-.p3 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p3 img {
+.botton:before {
+  content: "";
+  width: 250px;
+  height: 80px;
   position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
+  background-color: red;
+  top: -16px;
+  left: -270px;
+  border-radius: 50px;
+  transition-duration: 0.5s;
+}
+.botton:hover:before {
+  top: -16px;
+  left: -80px;
+}
+.botton:hover {
+  transform: scaleX(1.2) scaleY(1.2);
+  transform-origin: 50% 50%;
+}
+.botton:hover .text {
+  color: white;
+  font-size: 15px;
+  top:-30%;
 }
 
-
-
-
-
-
-.p4 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p4 topic span {
+.text {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
   width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p4 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p4 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-
-.p5 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p5 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p5 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p5 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-.p6 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p6 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p6 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p6 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-.p7 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p7 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p7 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p7 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-.p8 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p8 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p8 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p8 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-.p9 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p9 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p9 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p9 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
-}
-
-
-
-
-
-.p10 topic {
-  font-size: 2.3em;
-  width: 30%;
-  margin-top: 5%;
-  position: absolute;
-  right: 0;
-}
-.p10 topic span {
-  width: 100%;
-  background: red;
-  display: block;
-  height: 5px;
-  margin-top: 20px;
-  right: 0;
-}
-.p10 p{
-width: 600px;
-font-size: 20px;
-margin-top: 15%;
-margin-left: 60%;
-}
-
-.p10 img {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  top: 20%;
+  height: 100%;
+  top:-30%;
+  text-align: center;
+  line-height: 50px;
+  transition-duration: 0.5s;
 }
