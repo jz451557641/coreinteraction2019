@@ -71,8 +71,8 @@ function animation2(){
       time    = Date.now();
 
   console.log(time);
-  element.style.left = (450 + Math.cos(time / 1000)*300) + "px";
-  element.style.top  = (950 + Math.sin(time / 1000)*180) + "px";
+  element.style.left = (450 + Math.cos(time / 1000)*350) + "px";
+  element.style.top  = (950 + Math.sin(time / 1000)*200) + "px";
 
   setTimeout(animation2, 1000 / 30);
 }

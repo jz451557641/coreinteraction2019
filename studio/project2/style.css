@@ -1,19 +1,89 @@
 body{
   margin: 0;
   padding: 0;
-  background: black;
+  background: linear-gradient(-90deg,  #330033, #4d004d, #4d004d,#330033);
+background-size: 400% 400%;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
 }
 
 
 #shape1{
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: fixed;
-  border-radius: 60px;
+  border-radius: 80px;
   left: 0;
   top: 0;
-  border: 3px solid white;
+  background: #a3a3c2;
+-o-animation: blinking-outer-glow 2s infinite;
+-webkit-animation: blinking-outer-glow 2s infinite;
+-moz-animation: blinking-outer-glow 2s infinite;
+animation: blinking-outer-glow 2s infinite;
 }
+
+@-ms-keyframes blinking-outer-glow {
+  0%, 100% {
+    -moz-box-shadow: 0 0 10px #bbb;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px #bbb;
+  }
+  50% {
+    -moz-box-shadow: 0 0 100px #ff0000;
+    -webkit-box-shadow: 0 0 100px #ff0000;
+    box-shadow: 0 0 100px #ff0000;
+  }
+}
+@-o-keyframes blinking-outer-glow {
+  0%, 100% {
+    -moz-box-shadow: 0 0 10px #bbb;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px #bbb;
+  }
+  50% {
+    -moz-box-shadow: 0 0 100px #ff0000;
+    -webkit-box-shadow: 0 0 100px #ff0000;
+    box-shadow: 0 0 100px #ff0000;
+  }
+}
+@-webkit-keyframes blinking-outer-glow {
+  0%, 100% {
+    -moz-box-shadow: 0 0 10px #bbb;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px #bbb;
+  }
+  50% {
+    -moz-box-shadow: 0 0 100px #ff0000;
+    -webkit-box-shadow: 0 0 100px #ff0000;
+    box-shadow: 0 0 100px #ff0000;
+  }
+}
+@-moz-keyframes blinking-outer-glow {
+  0%, 100% {
+    -moz-box-shadow: 0 0 10px #bbb;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px #bbb;
+  }
+  50% {
+    -moz-box-shadow: 0 0 100px #ff0000;
+    -webkit-box-shadow: 0 0 100px #ff0000;
+    box-shadow: 0 0 100px #ff0000;
+  }
+}
+@keyframes blinking-outer-glow {
+  0%, 100% {
+    -moz-box-shadow: 0 0 10px #bbb;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    box-shadow: 0 0 10px #bbb;
+  }
+  50% {
+    -moz-box-shadow: 0 0 100px #ff0000;
+    -webkit-box-shadow: 0 0 100px #ff0000;
+    box-shadow: 0 0 100px #ff0000;
+  }
+}
+
+
 
 
 
@@ -28,16 +98,53 @@ body{
 	background-size: 400% 400%;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
+  z-index: 1;
 }
 #planet{
   width: 100px;
   height: 100px;
   border-radius: 100px;
   position: fixed;
-  background: linear-gradient(-45deg, #6600ff, #cc99ff, #ffcc66, #ff9900);
+  background: linear-gradient(-45deg, #990000, #ff9900, #990000 );
   background-size: 400% 400%;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 6s ease infinite;
+  animation: Gradient 6s ease infinite;
+}
+
+
+
+#incircle2{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  position: fixed;
+    background: linear-gradient(-90deg, #bfbfbf,#4d004d, #4d004d,#bfbfbf);
+  background-size: 400% 400%;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  z-index: 0;
+}
+
+#incircle3{
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  position: fixed;
+  background: linear-gradient(-45deg, #0066ff,#66ccff, #99ff99, #53ff1a);
+  background-size: 400% 400%;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+}
+
+#ball{
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  position: fixed;
+  background: linear-gradient(-45deg, #996600,#ffbb33, #805500,#4d3300);
+  background-size: 400% 400%;
+  -moz-animation: Gradient 2s ease infinite;
+  animation: Gradient 2s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -74,28 +181,4 @@ body{
 	100% {
 		background-position: 0% 50%
 	}
-}
-
-#incircle2{
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  position: fixed;
-  border: 3px solid white;
-}
-
-#incircle3{
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  position: fixed;
-  border: 3px solid white;
-}
-
-#ball{
-  width: 150px;
-  height: 150px;
-  border-radius: 200px;
-  position: fixed;
-  border: 3px solid white;
 }
