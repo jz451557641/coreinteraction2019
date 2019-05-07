@@ -3,8 +3,8 @@ body{
   padding: 0;
   background: linear-gradient(-90deg,  #00ccff, #000000, #000000, #ff0066);
   background-size: 400% 400%;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 
@@ -93,8 +93,8 @@ body{
   position: fixed;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-moz-animation: Gradient 10s ease infinite;
-	animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
   z-index: 1;
 }
 
@@ -105,10 +105,10 @@ body{
   left: 30%;
   top:40%;
   position: fixed;
-  -o-animation: blinking-outer-glow3 10s infinite;
-  -webkit-animation: blinking-outer-glow3 10s infinite;
-  -moz-animation: blinking-outer-glow3 10s infinite;
-  animation: blinking-outer-glow3 10s infinite;
+  -o-animation: blinking-outer-glow3 15s infinite;
+  -webkit-animation: blinking-outer-glow3 15s infinite;
+  -moz-animation: blinking-outer-glow3 15s infinite;
+  animation: blinking-outer-glow3 15s infinite;
 
 }
 
@@ -198,8 +198,8 @@ body{
   position: fixed;
     background: linear-gradient(-90deg, #99ffff,#000000, #000000,#ff80b3);
   background-size: 400% 400%;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   z-index: 0;
 }
 
