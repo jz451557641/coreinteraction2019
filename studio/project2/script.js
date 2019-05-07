@@ -133,7 +133,7 @@ function animation2(){
 
   console.log(time);
   element.style.left = (450 + Math.cos(time / 1000)*350) + "px";
-  element.style.top  = (950 + Math.sin(time / 1000)*180) + "px";
+  element.style.top  = (950 + Math.sin(time / 1000)*230) + "px";
 
   setTimeout(animation2, 1000 / 30);
 }
