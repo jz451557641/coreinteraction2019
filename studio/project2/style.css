@@ -196,7 +196,7 @@ body{
   height: 80px;
   border-radius: 80px;
   position: fixed;
-    background: linear-gradient(-90deg, #bfbfbf,#4d004d, #4d004d,#bfbfbf);
+    background: linear-gradient(-90deg, #bfbfbf,#000000, #000000,#bfbfbf);
   background-size: 400% 400%;
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
