@@ -16,22 +16,19 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-.flex, header, .section {
+header, .section {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
 
+
 header {
   width: 100%;
   min-height: 400px;
   height: 100vh;
   font-weight: bold;
-}
-header article {
-  float: left;
-  text-align: left;
 }
 header h1 {
   font-size: 5rem;
