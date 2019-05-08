@@ -16,7 +16,7 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-header, .section {
+header, .section, .end {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -32,6 +32,7 @@ header {
 }
 header h1 {
   font-size: 5rem;
+  float:center;
 }
 
 
@@ -51,12 +52,12 @@ header h1 {
 
 .section__left {
   width: 50%;
-  left:-15%;
+  left: -4%;
   float: left;
 }
 .section__right {
   width: 50%;
-  left: 20%;
+  left: 6%;
   float: left;
 }
 .section article {
@@ -142,4 +143,16 @@ header h1 {
   text-align: center;
   line-height: 50px;
   transition-duration: 0.5s;
+}
+
+.colum1{
+  padding-left: 10%;
+  font-weight: bold;
+  float: left;
+}
+
+.colum2{
+  padding-right: 10%;
+  font-weight: bold;
+  float: right;
 }
